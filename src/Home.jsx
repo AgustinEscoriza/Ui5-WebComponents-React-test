@@ -107,11 +107,11 @@ export function Home() {
                     direction={FlexBoxDirection.Column}
                     style={{ width: "100%", ...spacing.sapUiNoContentPadding, ...spacing.sapUiTinyMarginTop, ...spacing.sapUiTinyMarginBottom }}
                 >
-                    <FlexBox justifyContent={FlexBoxJustifyContent.SpaceBetween}>
+                  <FlexBox justifyContent={FlexBoxJustifyContent.SpaceBetween}>
                     <Text style={{ fontSize: ThemingParameters.sapFontLargeSize }}>Activity 4</Text>
                     <Text style={{ color: ThemingParameters.sapCriticalTextColor }}>in progress</Text>
-                    </FlexBox>
-                    <ProgressIndicator value={5} valueState={ValueState.Error} style={{ ...spacing.sapUiTinyMarginTop }}/>
+                  </FlexBox>
+                  <ProgressIndicator value={5} valueState={ValueState.Error} style={{ ...spacing.sapUiTinyMarginTop }}/>
                 </FlexBox>
                 </CustomListItem>
             </List>
@@ -123,7 +123,7 @@ export function Home() {
                 avatar={<Icon name={tableViewIcon} />}
                 />
             }
-            style={{ maxWidth: "900px" }}
+            style={{ maxWidth: "1300px" }}
             >
             <AnalyticalTable data={tableData} columns={tableColumns}  visibleRows={5}/>
             </Card>
